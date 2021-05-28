@@ -4,7 +4,6 @@
 The goal of the project is to write an endpoint that accepts JSON-formatted opening hours of a
 restaurant as an input and returns the rendered human readable format as a text output
 
-###Input
 Input JSON consists of keys indicating days of a week and corresponding opening hours
 as values.
 
