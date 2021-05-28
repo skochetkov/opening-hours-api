@@ -1,6 +1,6 @@
 # Wolt - Coding Task v2.2 Opening Hours
 
-###Project Goal
+### Project Goal
 The goal of the project is to write an endpoint that accepts JSON-formatted opening hours of a
 restaurant as an input and returns the rendered human readable format as a text output
 
@@ -10,7 +10,7 @@ as values.
 
 Part I
 ---
-###Deliverable
+### Deliverable
 Build a HTTP API that accepts opening hours data as an input (JSON) and returns a more
 human readable version of the data formatted using a 12-hour clock.
 Output example in 12-hour clock format:
@@ -22,7 +22,7 @@ Friday: 11 AM - 9 PM
 Saturday: 11 AM - 9 PM
 Sunday: Closed
 ```
-###Building and Running
+### Building and Running
 To build this project, execute the following command in a repository's root directory (designates assembling all outputs and running all checks):
 >$ gradle build
 
@@ -49,9 +49,9 @@ Here's a sample of a curl requst:
 
 ```curl -X PUT -H "Content-Type:application/json" -d "{}" http://localhost:8080/api/v1/merchants/hours```
 
-###Implementation Details
+### Implementation Details
 
-####Technologies
+#### Technologies
 I used Kotlin as programming language and Ktor framework for bulding API endpoint.
 Ktor is an asynchronous framework for creating microservices, web applications, and more. It’s fun, free, and open source.
 I choose Ktor becuase it's very lightweight, asynchronous and extensible with great community support!
@@ -59,13 +59,13 @@ I choose Ktor becuase it's very lightweight, asynchronous and extensible with gr
 Ktor github: https://github.com/ktorio
 Ktor documentation: https://ktor.io/docs/welcome.html
 
-####Assumptions (additional to the project description)
+#### Assumptions (additional to the project description)
 Client request contains all days of the week. If one of the days is missing, the error returns
 
 #### Handling incorrect input or errors
 `HttpStatusCode.BadRequest` (Status: 400 Bad Request) was used for any invalid input situations 
 
-####Test cases covered
+#### Test cases covered
 1. With correct json input -> ok response
 2. With missing day -> error response
 3. With incorrect hours sequence (eg open -> close -> close -> open) -> error response
@@ -79,7 +79,7 @@ Client request contains all days of the week. If one of the days is missing, the
 11. With multiple open/closed hours a day -> ok response
 12. With out of range time (< 0 or > max) -> error response
 
-###Things to consier improving
+### Things to consier improving
 - Error and information messages needs to be stored in conf file
 
 Part II
