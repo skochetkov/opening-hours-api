@@ -1,4 +1,4 @@
-# Wolt - Coding Task v2.2 Opening Hours
+# Opening Hours
 
 ### Project Goal
 The goal of the project is to write an endpoint that accepts JSON-formatted opening hours of a
